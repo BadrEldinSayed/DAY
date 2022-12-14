@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Montserrat+Alternates&family=Montserrat:ital,wght@0,500;0,600;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat:ital,wght@0,500;0,600;1,500&family=Raleway:wght@600&display=swap');
+
+body {
+    font-family: "Barlow", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff !important;
+}
+
+a:hover {
+    color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+ul>li {
+    list-style-type: none;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* BTN */
+.btn {
+    border: 1px solid #fff;
+    padding: 10px 25px 10px 25px;
+    transition: all 0.4s ease;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #CC1616;
+    border: none;
+}
+
+/* TITLE */
+.title h3 {
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+}
+
+/*  FIXED-BTN*/
+#btnUp {
+    padding: 10px 15px;
+    background-color: #CC1616;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99999;
+    display: none;
+}
+
+#btnUp:hover {
+    background-color: #E82D2D;
+}
+
+/* LOADING */
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 9999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.spinner>div {
+    background-color: #CC1616;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+
+    0%,
+    40%,
+    100% {
+        -webkit-transform: scaleY(0.4)
+    }
+
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes sk-stretchdelay {
+
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}
+
+
+
+
+
+
+
+/* ------------------------------------
+                NAVBAR 
+--------------------------------------- */
+.top-nav {
+    background-color: #191919;
+}
+
+.top-nav .item i {
+    color: #CC1616;
+}
+
+.top-nav span {
+    margin-left: 6px;
+    color: #9AA3A3;
+}
+
+.social-nav a {
+    color: #9AA3A3 !important;
+    margin-right: 20px;
+    font-size: 1.1rem;
+}
+
+nav {
+    background-color: #252525;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 25px 17px 25px 17px;
+    font-size: 1.1rem;
+    transition: all 0.4s ease;
+    margin-right: 6px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: #CC1616;
+    color: #443C2B !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    background-color: #CC1616;
+    color: #fff !important;
+}
+
+/* HERO */
+.hero {
+    background-image: url(../images/hero-bg.jpg);
+    height: calc(100vh - 110px);
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    position: relative;
+}
+
+.hero .layer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+    font-family: "Raleway", sans-serif;
+}
+
+.hero h4 {
+    font-family: "Raleway", sans-serif;
+    color: #EEEEEE;
+}
+
+/* ------------------------------------
+                NAVBAR 
+--------------------------------------- */
+#about h3 {
+    font-weight: 600;
+    color: #444444;
+    font-size: 1.6rem;
+}
+
+#about ul>li i {
+    color: #CC1616;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+#about p,
+ul>li {
+    font-size: 1.1rem;
+}
+
+/* ------------------------------------
+                SERVICES 
+--------------------------------------- */
+#services .item {
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    padding: 80px 20px;
+    transition: all ease-in-out 0.3s;
+}
+
+#services .icon {
+    font-size: 1.5rem;
+    background-color: #CC1616;
+    padding: 1.2rem;
+    color: #fff;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    transition: all 0.3s ease-out 0s;
+    position: relative;
+}
+
+#services .icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -8px;
+    left: -8px;
+    background-color: #fce5e5;
+    z-index: -1;
+}
+
+#services .item:hover {
+    background-color: #CC1616;
+    padding: 70px 20px 90px 20px;
+}
+
+#services .item h4,
+#services .item p {
+    transition: all 0.3s ease-out 0s;
+}
+
+#services .item:hover h4,
+#services .item:hover p {
+    color: #fff;
+}
+
+#services .item:hover .icon {
+    color: #CC1616;
+    background-color: #fff;
+}
+
+#services .item:hover .icon::after {
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+#services .title h3::after {
+    content: 'SERVICES';
+    font-size: 4rem;
+    font-weight: bolder;
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+    color: #F4F4F4;
+}
+
+/* ------------------------------------
+                CTA 
+--------------------------------------- */
+#cta {
+    background-image: url(../images/cta-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 13rem 0;
+}
+
+#cta .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+#cta a {
+    border: 1px solid #fff;
+    padding: 0.6rem 2rem;
+    transition: all 0.4s ease;
+}
+
+#cta a:hover {
+    background-color: #CC1616;
+    border-color: #CC1616;
+}
+
+
+/* ------------------------------------
+                PORTFOLIO 
+--------------------------------------- */
+.nav-pills .nav-link {
+    background-color: #fff !important;
+    color: #222;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-pills .nav-link:hover {
+    color: black;
+}
+
+.nav-pills .nav-link.active {
+    position: relative;
+    color: black;
+}
+
+.nav-pills .nav-link.active::after {
+    content: '';
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: black;
+
+}
+
+.work-layer {
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.work-item:hover .work-layer {
+    opacity: .9;
+    border: 6px solid #CC1616;
+}
+
+#portfolio .work-text {
+    transition: all 0.6s;
+}
+
+.work-item:hover .work-text {
+    top: 0 !important;
+    transition: all 0.4s;
+}
+
+.work-item img {
+    transition: all 0.5s;
+}
+
+.work-item:hover img {
+    transform: scale(1.1);
+}
+
+#portfolio .work-text h6 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: black;
+}
+
+#portfolio .social-icons .icon i {
+    background-color: #CC1616;
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+#portfolio .title h3::after {
+    content: 'PORTFOLIO';
+    font-size: 4rem;
+    font-weight: bolder;
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+    color: #F4F4F4;
+}
+
+/* ------------------------------------
+                PRICING 
+--------------------------------------- */
+#pricing .card {
+    background-color: #F9F9F9;
+    border: none;
+    padding: 50px 30px;
+    border-radius: 7px;
+    align-items: center;
+}
+
+#pricing .card .content p {
+    font-size: 2.5rem;
+    color: #CC1616;
+}
+
+
+#pricing .card .content p .month {
+    font-size: 1.1rem;
+}
+
+#pricing .card .btn {
+    background-color: #CC1616 !important;
+    width: 38%;
+    color: #fff;
+    margin-top: 1.5rem;
+}
+
+#pricing .card .btn:hover {
+    background-color: #E82D2D !important;
+}
+
+#pricing .red {
+    background-color: #CC1616 !important;
+}
+
+#pricing .red .content p {
+    color: #fff;
+}
+
+#pricing .red .content ul>li {
+    color: #fff;
+}
+
+#pricing .red .btn {
+    background-color: #E82D2D !important;
+    border: none;
+}
+
+#pricing .red .btn:hover {
+    background-color: #fff !important;
+    color: #CC1616;
+}
+
+#pricing .title h3::after {
+    content: 'PRICING';
+    font-size: 4rem;
+    font-weight: bolder;
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+    color: #F4F4F4;
+}
+
+/* ------------------------------------
+                TEAM 
+--------------------------------------- */
+#team .box {
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    padding: 3rem 2rem;
+}
+
+#team .box img {
+    border-radius: 50%;
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+#team .box h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+#team .box p {
+    font-size: 1rem;
+}
+
+#team .box .social-nav a {
+    font-size: 1.3rem;
+    margin-left: 0;
+    transition: all 0.3s ease;
+}
+
+#team .box .social-nav a:hover {
+    color: #CC1616 !important;
+}
+
+#team .title h3::after {
+    content: 'TEAM';
+    font-size: 4rem;
+    font-weight: bolder;
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+    color: #F4F4F4;
+}
+
+
+/* ------------------------------------
+                CONTACT 
+--------------------------------------- */
+#contact .box-info,
+#contact .box-shadow {
+    box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    padding: 20px 0 30px 0;
+}
+
+#contact .cont-btn {
+    background-color: #CC1616;
+    color: #fff;
+}
+
+#contact .cont-btn:hover {
+    border: 1px solid #CC1616 !important;
+    background-color: #E82D2D;
+}
+
+#contact .box-info i {
+    color: #CC1616;
+    font-size: 29px;
+    border: 2px dotted #f5a0a0;
+    padding: 0.7rem;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+#contact .title h3::after {
+    content: 'CONTACT';
+    font-size: 4rem;
+    font-weight: bolder;
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+    color: #F4F4F4;
+}
+
+
+/* ------------------------------------
+                FOOTER 
+--------------------------------------- */
+footer {
+    background-color: #0C0C0C;
+    padding: 4rem 4rem 2rem 4rem;
+}
+
+footer .box {
+    background-color: #191919;
+    border-top: 5px solid #CC1616;
+    padding: 1.7rem 3rem;
+}
+
+footer .social-nav a {
+    background-color: #262626;
+    color: #fff !important;
+    width: 33px;
+    height: 33px;
+    font-size: 0.9rem;
+    margin-right: 7px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .social-nav a:hover {
+    background-color: #CC1616;
+}
+
+footer .items ul>li i {
+    color: #CC1616;
+    margin-right: 5px;
+    font-size: 0.8rem;
+}
+
+footer .items ul {
+    padding-left: 7px;
+}
+
+footer .items ul>li {
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+footer .items ul>li:hover {
+    color: #CC1616;
+}
+
+footer input {
+    position: relative;
+}
+
+footer .subscribe {
+    position: relative;
+}
+
+footer .subs-btn {
+    font-size: 1rem;
+    background-color: #CC1616;
+    color: #fff;
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+footer .subs-btn:hover {
+    background-color: #E82D2D;
+}
+
+footer .line {
+    width: 100%;
+    height: 1px;
+    background-color: #9aa3a334;
+    margin-top: 3rem;
+}
+
+footer .credits span {
+    color: #CC1616;
+}
+
+/* MEDIA-QUERY */
+@media only screen and (max-width: 500px) {
+    footer .subs-btn {
+        width: auto;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+}
